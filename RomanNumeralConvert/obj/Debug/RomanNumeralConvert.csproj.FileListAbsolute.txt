@@ -3,3 +3,4 @@ c:\users\dan dcc\documents\visual studio 2015\Projects\RomanNumeralConvert\Roman
 c:\users\dan dcc\documents\visual studio 2015\Projects\RomanNumeralConvert\RomanNumeralConvert\bin\Debug\RomanNumeralConvert.pdb
 c:\users\dan dcc\documents\visual studio 2015\Projects\RomanNumeralConvert\RomanNumeralConvert\obj\Debug\RomanNumeralConvert.exe
 c:\users\dan dcc\documents\visual studio 2015\Projects\RomanNumeralConvert\RomanNumeralConvert\obj\Debug\RomanNumeralConvert.pdb
+c:\users\dan dcc\documents\visual studio 2015\Projects\RomanNumeralConvert\RomanNumeralConvert\obj\Debug\RomanNumeralConvert.csprojResolveAssemblyReference.cache
