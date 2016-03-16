@@ -12,15 +12,17 @@ namespace RomanNumeralConvert
         int number = 0;
         public void ToDecimal()
         {
+            Roman = "";
+            RomanTemp = "";
             number = 0;
             Console.Write("Please enter the Numeral from I to x(10,000) that" + LineBreak
                 + "you would like converted to Roma1n Numeral." + LineBreak + LineBreak);
             Roman = Console.ReadLine();
             RomanTemp = Roman;
             while (RomanTemp.StartsWith("x"))       {number += 10000;   RomanTemp = RomanTemp.Remove(0, 1);}
-            while (RomanTemp.StartsWith("Mx"))      {number += 9000;    RomanTemp = RomanTemp.Remove(0, 1);}
+            while (RomanTemp.StartsWith("Mx"))      {number += 9000;    RomanTemp = RomanTemp.Remove(0, 2);}
             while (RomanTemp.StartsWith("v"))       {number += 5000;    RomanTemp = RomanTemp.Remove(0, 1);}
-            while (RomanTemp.StartsWith("Mv"))      {number += 4000;    RomanTemp = RomanTemp.Remove(0, 1);}
+            while (RomanTemp.StartsWith("Mv"))      {number += 4000;    RomanTemp = RomanTemp.Remove(0, 2);}
             while (RomanTemp.StartsWith("M"))       {number += 1000;    RomanTemp = RomanTemp.Remove(0, 1);}
             while (RomanTemp.StartsWith("CM"))      {number += 900;     RomanTemp = RomanTemp.Remove(0, 2);}
             while (RomanTemp.StartsWith("D"))       {number += 500;     RomanTemp = RomanTemp.Remove(0, 1);}

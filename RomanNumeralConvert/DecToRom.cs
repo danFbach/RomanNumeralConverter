@@ -7,34 +7,36 @@ using System.Threading.Tasks;
 namespace RomanNumeralConvert
 {   class DecToRom
     {   int number;
+        int numberTemp;
         String LineBreak = Environment.NewLine;
         String Roman = "";
         public void ToRoman()
         {       Roman = "";
-                Console.Write("Please enter the number from 1 to 10,000 that" + LineBreak
+                Console.Write(LineBreak + "Please enter the numberTemp from 1 to 10,000 that" + LineBreak
                     + "you would like converted to Roman Numeral." + LineBreak + LineBreak);
                 number = int.Parse(Console.ReadLine());
-                if (number >= 1 || number <= 10000)
+                numberTemp = number;
+                if (numberTemp >= 1 || numberTemp <= 10000)
                 {
-                while (number >= 10000)     {Roman += "x";      number -= 10000;}
-                while (number >= 9000)      {Roman += "Mx";     number -= 9000;}
-                while (number >= 5000)      {Roman += "v";      number -= 5000;}
-                while (number >= 4000)      {Roman += "Mv";     number -= 4000;}
-                while (number >= 1000)      {Roman += "M";      number -= 1000;}
-                while (number >= 900)       {Roman += "CM";     number -= 900;}
-                while (number >= 500)       {Roman += "D";      number -= 500;}
-                while (number >= 400)       {Roman += "CD";     number -= 400;}
-                while (number >= 100)       {Roman += "C";      number -= 100;}
-                while (number >= 90)        {Roman += "XC";     number -= 90;}
-                while (number >= 50)        {Roman += "L";      number -= 50;}
-                while (number >= 40)        {Roman += "XL";     number -= 40;}
-                while (number >= 10)        {Roman += "X";      number -= 10;}
-                while (number >= 9)         {Roman += "IX";     number -= 9;}
-                while (number >= 5)         {Roman += "V";      number -= 5;}
-                while (number >= 4)         {Roman += "IV";     number -= 4;}
-                while (number >= 1)         {Roman += "I";      number -= 1;}
+                while (numberTemp >= 10000)     {Roman += "x";      numberTemp -= 10000;}
+                while (numberTemp >= 9000)      {Roman += "Mx";     numberTemp -= 9000;}
+                while (numberTemp >= 5000)      {Roman += "v";      numberTemp -= 5000;}
+                while (numberTemp >= 4000)      {Roman += "Mv";     numberTemp -= 4000;}
+                while (numberTemp >= 1000)      {Roman += "M";      numberTemp -= 1000;}
+                while (numberTemp >= 900)       {Roman += "CM";     numberTemp -= 900;}
+                while (numberTemp >= 500)       {Roman += "D";      numberTemp -= 500;}
+                while (numberTemp >= 400)       {Roman += "CD";     numberTemp -= 400;}
+                while (numberTemp >= 100)       {Roman += "C";      numberTemp -= 100;}
+                while (numberTemp >= 90)        {Roman += "XC";     numberTemp -= 90;}
+                while (numberTemp >= 50)        {Roman += "L";      numberTemp -= 50;}
+                while (numberTemp >= 40)        {Roman += "XL";     numberTemp -= 40;}
+                while (numberTemp >= 10)        {Roman += "X";      numberTemp -= 10;}
+                while (numberTemp >= 9)         {Roman += "IX";     numberTemp -= 9;}
+                while (numberTemp >= 5)         {Roman += "V";      numberTemp -= 5;}
+                while (numberTemp >= 4)         {Roman += "IV";     numberTemp -= 4;}
+                while (numberTemp >= 1)         {Roman += "I";      numberTemp -= 1;}
 
-                Console.WriteLine(LineBreak + Roman + LineBreak);
+                Console.WriteLine(LineBreak + "You've entered " + number + " and it equals " + Roman + " in Roman Numerals." + LineBreak);
             }
         }
     }

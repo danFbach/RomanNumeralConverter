@@ -14,7 +14,7 @@ namespace RomanNumeralConvert
         public int menu() {
             Console.WriteLine("Would you like to convert a \n"
                 + "1) Decimal to a Roman Numeral? \n"
-                + "2) Roman Numeral to a Decimal?   ");
+                + "2) Roman Numeral to a Decimal?");
             selection = int.Parse(Console.ReadLine());
             return selection;
         }

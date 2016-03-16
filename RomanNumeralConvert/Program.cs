@@ -11,7 +11,7 @@ namespace RomanNumeralConvert
         static void Main(string[] args)
         {
             Start begin = new Start();
-            begin.startCalc();
+            begin.StartStopCalc();
         }
     }
 }

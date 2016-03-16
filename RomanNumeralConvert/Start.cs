@@ -12,7 +12,7 @@ namespace RomanNumeralConvert
         String LineBreak = Environment.NewLine;
         Select menuChoice = new Select();
 
-        public void startCalc() {
+        public void StartStopCalc() {
             while (playState.Equals("yes"))
             {
                 menuChoice.menu();
@@ -22,7 +22,6 @@ namespace RomanNumeralConvert
                     + "'No', I'm done." + LineBreak);
                 playState = Console.ReadLine();
                 playState = playState.ToLower();
-                Console.WriteLine(LineBreak);
             }Console.WriteLine("Thank you for using Dan's conversion tool." + LineBreak
                 + "Goodbye."); Console.ReadLine();
         }
